@@ -54,4 +54,5 @@ function cart_init(){
    </form>
 
 </div>
+<?php
 }
