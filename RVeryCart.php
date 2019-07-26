@@ -12,9 +12,9 @@
 
 * Author: Radu Ionut
 
-* Author URI: #
+* Author URI: https://github.com/radui1398/
 
-* GitHub Plugin URI: afragen/github-updater
+* GitHub Plugin URI: https://github.com/radui1398/RVeryCart/
 
 **/
 
