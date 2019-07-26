@@ -66,15 +66,15 @@ add_action('init', 'register_plugin_script');
 
 function register_plugin_script() {
 
-    wp_register_script( 'noty', plugins_url('/noty.min.js', __FILE__), array('jquery'), '2.5.1' );
+    wp_register_script( 'noty', plugins_url('/js/noty.min.js', __FILE__), array('jquery'), '2.5.1' );
 
-    wp_register_script( 'rVeryCartJS', plugins_url('/cart_js.js', __FILE__), array('jquery'), '2.5.1' );
+    wp_register_script( 'rVeryCartJS', plugins_url('/js/cart_js.js', __FILE__), array('jquery'), '2.5.1' );
 
 
 
-    wp_register_style( 'notyCSS', plugins_url('/noty.css', __FILE__), false, '1.0.0', 'all');
+    wp_register_style( 'notyCSS', plugins_url('/css/noty.css', __FILE__), false, '1.0.0', 'all');
 
-    wp_register_style( 'rVeryCaryCSS', plugins_url('/cart_style.css', __FILE__), false, '1.0.0', 'all');
+    wp_register_style( 'rVeryCaryCSS', plugins_url('/style.css', __FILE__), false, '1.0.0', 'all');
 
 }
 
@@ -450,7 +450,7 @@ function cart_setup_menu(){
 
 function cart_init(){
 
-   $cssStyle = fopen(plugins_url('/cart_style.css', __FILE__), "r") or die("Unable to open file!");
+   $cssStyle = fopen(plugins_url('/style.css', __FILE__), "r") or die("Unable to open file!");
 
    $cssContent = fread($cssStyle,10000);
 
@@ -470,7 +470,7 @@ function cart_init(){
 
       <p>Edit the cart style.</p>
 
-      <input type="hidden" name="fileLocation" value="<?php echo plugin_dir_path( __FILE__ ).'/cart_style.css';?>" />
+      <input type="hidden" name="fileLocation" value="<?php echo plugin_dir_path( __FILE__ ).'/style.css';?>" />
 
       <textarea rows="20" id="cssEditor" style="width: 40%" name="cssEditor"><?php echo $cssContent; ?></textarea>
 
