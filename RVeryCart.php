@@ -8,7 +8,7 @@
 
 * Description: Cart Plugin created by VeryCreative. To use this plugin enable your theme support - add_theme_support('woocommerce');
 
-* Version: 1.0
+* Version: 1.001
 
 * Author: Radu Ionut
 
@@ -28,15 +28,7 @@
 
 /* add_localize_scriptR - Daca l-ai declarat deja ar fi bine sa il stergi si sa il pastrezi pe acesta :) */
 
-
-
-if(function_exists('add_localize_scriptR')){
-
-   remove_action('wp_head', 'add_localize_scriptR', 999);
-
-}
-
-function add_localize_script_R()
+function add_localize_script()
 
 {
 
