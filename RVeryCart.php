@@ -8,7 +8,7 @@
 
 * Description: Cart Plugin created by VeryCreative.
 
-* Version: 1.002
+* Version: 1.002b
 
 * Author: Radu Ionut
 
