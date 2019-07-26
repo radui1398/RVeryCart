@@ -20,6 +20,6 @@
 
 
 
-include plugin_dir_path( __FILE__ ) . '/frame/settings.php';
-include plugin_dir_path( __FILE__ ) . '/frame/admin.php';
-include plugin_dir_path( __FILE__ ) . '/frame/ajaxFunctions.php';
+require dirname( __FILE__ ) . '/frame/settings.php';
+require dirname( __FILE__ ) . '/frame/admin.php';
+require dirname( __FILE__ ) . '/frame/ajaxFunctions.php';
