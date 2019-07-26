@@ -28,7 +28,7 @@
 
 /* add_localize_scriptR - Daca l-ai declarat deja ar fi bine sa il stergi si sa il pastrezi pe acesta :) */
 
-function add_localize_script()
+function add_localize_scriptR()
 
 {
 
