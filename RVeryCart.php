@@ -19,5 +19,5 @@
 **/
 
 include( plugin_dir_path( __FILE__ ) . 'frame/settings.php');
-include( plugin_dir_path( __FILE__ ) . 'frame/admin.php');
-include( plugin_dir_path( __FILE__ ) . 'frame/ajaxFunctions.php');
+// include( plugin_dir_path( __FILE__ ) . 'frame/admin.php');
+// include( plugin_dir_path( __FILE__ ) . 'frame/ajaxFunctions.php');
