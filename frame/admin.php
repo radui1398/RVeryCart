@@ -4,7 +4,7 @@ add_action('admin_menu', 'cart_setup_menu');
 
 function cart_setup_menu(){
 
-add_submenu_page( 'options-general.php','RVeryCart', 'Cart Options', 'manage_options', 'cart-options', 'cart_init' );
+   add_submenu_page( 'options-general.php','RVeryCart', 'Cart Options', 'manage_options', 'cart-options', 'cart_init' );
 
 }
 
@@ -12,13 +12,13 @@ add_submenu_page( 'options-general.php','RVeryCart', 'Cart Options', 'manage_opt
 
 function cart_init(){
 
-$cssStyle = fopen(plugins_url('/style.css', __FILE__), "r") or die("Unable to open file!");
+   $cssStyle = fopen(plugins_url('/style.css', __FILE__), "r") or die("Unable to open file!");
 
-$cssContent = fread($cssStyle,10000);
+   $cssContent = fread($cssStyle,10000);
 
-fclose($cssStyle);
+   fclose($cssStyle);
 
-?>
+   ?>
 
 <div>
 
@@ -54,3 +54,4 @@ fclose($cssStyle);
    </form>
 
 </div>
+}
