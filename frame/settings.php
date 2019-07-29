@@ -34,6 +34,8 @@ function register_plugin_script() {
 
     wp_register_script( 'rVeryCartJS', plugins_url('../js/cart_js.js', __FILE__), array('jquery'), '2.5.1' );
 
+    wp_register_script( 'rVeryCartJSInit', plugins_url('../js/cart_init.js', __FILE__), array('jquery'), '2.5.1' );
+
     wp_register_style( 'notyCSS', plugins_url('../css/noty.css', __FILE__), false, '1.0.0', 'all');
 
     wp_register_style( 'rVeryCaryCSS', plugins_url('../style.css', __FILE__), false, '1.0.0', 'all');

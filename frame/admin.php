@@ -161,5 +161,29 @@ function cart_init(){
 
       </form>
    </div>
+
+   <div style="width: 30%; margin-left: 4%; float: left;">
+      <?php
+      $bufferFile = file_get_contents(plugins_url('../js/cart_init.js', __FILE__), "r");
+
+      ?>
+      <form method="post" action="<?php echo plugins_url('../utils/style_updater.php', __FILE__)?>">
+
+         <h3>Cart Initialization</h3>
+
+         <p>JavaScript code, usefull to recall after filtering with an ajax plugin.</p>
+
+         <input type="hidden" name="fileLocation"
+            value="<?php echo plugin_dir_path( __FILE__ ).'../js/cart_init.js';?>" />
+
+         <textarea rows="20" style="width:100%" id="cssEditor"
+            name="cssEditor"><?php echo htmlspecialchars($bufferFile); ?></textarea>
+
+
+
+         <?php  submit_button(); ?>
+
+      </form>
+   </div>
    <?php
 }
