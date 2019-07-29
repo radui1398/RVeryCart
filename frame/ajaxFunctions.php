@@ -158,6 +158,6 @@ function generate_cart(){
 
    $nrOfItems = WC()->cart->get_cart_contents_count();
 
-   include( plugin_dir_path( __FILE__ ) . 'template/cart.php');
+   include( plugin_dir_path( __FILE__ ) . '../template/controller.php');
 
 }

@@ -8,7 +8,7 @@
 
 * Description: Cart Plugin created by VeryCreative.
 
-* Version: 1.002b
+* Version: 1.010
 
 * Author: Radu Ionut
 
@@ -19,5 +19,5 @@
 **/
 
 include( plugin_dir_path( __FILE__ ) . 'frame/settings.php');
-// include( plugin_dir_path( __FILE__ ) . 'frame/admin.php');
-// include( plugin_dir_path( __FILE__ ) . 'frame/ajaxFunctions.php');
+include( plugin_dir_path( __FILE__ ) . 'frame/admin.php');
+include( plugin_dir_path( __FILE__ ) . 'frame/ajaxFunctions.php');
