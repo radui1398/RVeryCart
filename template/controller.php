@@ -7,7 +7,7 @@ function rverycart_items(){
 
 
 function rverycart_shop_details(){
-   include( plugin_dir_path( __FILE__ ) . '../template/shop_details.php');
+   include( plugin_dir_path( __FILE__ ) . '../template/shop_details.tpl');
 }
 
 function rverycart_subtotal(){
@@ -19,7 +19,7 @@ echo WC()->cart->get_checkout_url();
 }
 
 function rverycart_no_items(){
-   include( plugin_dir_path( __FILE__ ) . '../template/no_items.php');
+   include( plugin_dir_path( __FILE__ ) . '../template/no_items.tpl');
 }
 
 function rverycart_no_items_msg(){
