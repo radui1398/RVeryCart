@@ -1,3 +1,5 @@
+$ = jQuery;
+
 jQuery(document).ready(function ($) {
    //shop update
 

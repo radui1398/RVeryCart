@@ -54,7 +54,7 @@ function enqueue_plugin_style(){
 
    wp_enqueue_script('rVeryCartJS');
 
-   wp_enqueue_script('rVeryCartInit');
+   wp_enqueue_script('rVeryCartJSInit');
 
    wp_enqueue_script('noty');
 
