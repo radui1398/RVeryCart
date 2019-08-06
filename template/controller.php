@@ -54,8 +54,8 @@ function rverycart_item_price($type = 'input',$cart_item,$cart_item_key,$product
 if($type == 'input'){
    echo wc_get_formatted_cart_item_data($cart_item); 
    echo apply_filters('woocommerce_widget_cart_item_quantity', '<div class="item-info">'
-   . sprintf('<span class="quantity" prod_id="%s" id="%s" data-quantity-limit="%s">x<input type="number" min="1"
-   value="%s"></span><span class="price">%s</span>', $cart_item_key,$product_id,  $_product->get_stock_quantity(), $cart_item['quantity'],
+   . sprintf('<span class="quantity" prod_id="%s" id="%s" data-variation="%s" data-quantity-limit="%s">x<input type="number" min="1"
+   value="%s"></span><span class="price">%s</span>', $cart_item_key,$product_id, $cart_item['variation_id'],  $_product->get_stock_quantity(), $cart_item['quantity'],
    $product_price) . ' </div>', $cart_item, $cart_item_key); 
 }
 }
